@@ -1,6 +1,5 @@
 
-import React from "react";
-import { product } from "./Product";
+import  product from "./Product";
 
 const Name = () => {
   return <h1>{product.name}</h1>;

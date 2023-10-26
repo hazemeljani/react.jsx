@@ -1,8 +1,8 @@
-import React from "react";
-import { product } from "./Product";
+
+import product  from "./Product";
 
 const Price = () => {
-  return <p>{product.price}</p>;
+  return <p>135 </p>;
 };
 
 export default Price;

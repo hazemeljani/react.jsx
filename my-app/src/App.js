@@ -1,24 +1,30 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Card } from "react-bootstrap";
 import Name from "./Name";
 import Price from "./Price";
 import Description from "./Description";
 import Image from "./Image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Card } from "react-bootstrap";
-
+import myImage from "./mercedes.jpg"
 const App = () => {
+  const firstName = ""
   return (
     <div>
-      <Card>
+     <Card style={{ width: '18rem' }}>
+        <Image></Image>
         <Card.Body>
-          <Name />
-          <Price />
-          <Description />
-          <Image />
+          <Name></Name>
+          <Price></Price>
+          <Description ></Description>
+      
         </Card.Body>
       </Card>
-      <p>Hello, [Your First Name] or "Hello, there!"</p>
-      {<img src={product.image} alt="Product" />}
+      
+      {firstName && <img src={myImage} alt ='myImage' />}
+
+
+
+      
     </div>
   );
 };
